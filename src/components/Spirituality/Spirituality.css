@@ -1,0 +1,26 @@
+.spirituality-picture {
+  background-size: cover;
+  width: 100%;
+  object-fit: contain;
+}
+
+.spirituality-first-section {
+  Width: 60%;
+  margin: 50px auto;
+}
+
+.spirituality-first-section p {
+  text-indent: 2em;
+}
+
+.spirituality-quote {
+  margin-top: 50px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .spirituality-first-section {
+    width: 80%;
+    margin: 30px auto;
+  }
+}

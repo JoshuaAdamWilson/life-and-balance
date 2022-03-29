@@ -1,0 +1,58 @@
+.events-section {
+    width: 80%;
+    margin: auto;
+}
+
+.events-search {
+    display: flex;
+    margin: 20px 20px 20px 40px;
+    font-size: 24px;
+}
+
+.events-picture {
+    background-size: cover;
+    width: 100%;
+    object-fit: contain;
+}
+
+.events-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.event-post {
+    margin: 10px;
+    border: 1px solid lightgray;
+    max-width: 300px;
+}
+
+.event-post-picture {
+    width: 300px;
+    height: 200px;
+}
+
+.event-post-title, .event-date, .event-location, .host {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.indent {
+    padding-left: 2em;
+}
+
+.happening {
+    color: red;
+}
+
+.icons {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.event-icon {
+    font-size: 20px;
+    margin: 10px;
+    cursor: pointer;
+}

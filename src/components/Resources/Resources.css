@@ -1,0 +1,144 @@
+
+
+.resources {
+  background-size: cover;
+  width: 100%;
+  object-fit: contain;
+}
+
+.education {
+  width: 60%;
+  margin: auto;
+}
+
+.education > h1 {
+  text-align: center;
+  margin: 30px;
+}
+
+.education > p {
+  text-indent: 2em;
+}
+
+.education-content {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.educate {
+  background-image: url('../images/blog-preview.jpg');
+  background-size: cover;
+  width: 230px;
+  height: 230px;
+  margin: 10px;
+  display: table-cell;
+  vertical-align: middle;
+  border-radius: 50%;
+}
+
+.fade-box {
+  width: 230px;
+  height: 230px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-left: 30px;
+  padding-right: 30px;
+  display: table-cell;
+  vertical-align:middle;
+  border-radius: 50%;
+}
+
+.yoga {
+  text-align: center;
+  width: 78%;
+  margin: auto;
+}
+
+.yoga p {
+  width: 80%;
+  margin: 30px auto;
+  text-align: left;
+  text-indent: 2em;
+}
+
+.videos iframe {
+  padding: 20px;
+}
+
+.spirituality-figure {
+  float: right;
+  padding-right: 100px;
+}
+
+.spirituality-figure figcaption {
+  width: 60%;
+  margin: auto;
+  padding-top: 10px;
+}
+
+.spirituality-pic {
+  width: 400px;
+}
+
+.nami {
+  text-align: center;
+  width: 78%;
+  margin: auto;
+}
+
+.nami p {
+    width: 80%;
+    margin: 30px auto;
+    text-align: left;
+    text-indent: 2em;
+}
+
+.nami-values {
+  margin: auto;
+  text-align: left;
+  width: 700px;
+}
+
+@media (max-width: 1200px) {
+  .education {
+    width: 80%;
+  }
+
+  .videos iframe {
+    width: 70%;
+    height: 250px;
+  }
+
+  .yoga {
+    width: 100%;
+  }
+
+  .spirituality-figure {
+    padding-right: 0;
+  }
+
+  .nami-values {
+    width: 340px;
+  }
+}
+
+@media (max-width: 768px) {
+  .educate {
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+  }
+
+  .fade-box {
+    width: 150px;
+    height: 150px;
+    font-size: 12px;
+  }
+
+  .videos iframe {
+    height: 160px;
+  }
+}

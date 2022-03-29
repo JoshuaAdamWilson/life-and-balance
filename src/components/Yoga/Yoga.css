@@ -1,0 +1,49 @@
+.yoga-header {
+  background-size: cover;
+  width: 100%;
+  object-fit: contain;
+}
+
+.yoga-first-section {
+  width: 60%;
+  margin: auto;
+  margin-top: 50px; 
+}
+
+.yoga-first-section p {
+  text-indent: 2em;
+}
+
+.yoga-videos-section {
+  margin: auto;
+  width: 60%;
+}
+
+.adriene p {
+  text-indent: 2em;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icons a {
+  margin: 10px;
+}
+
+.adriene h4 {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .yoga-first-section {
+    width: 80%;
+    margin-top: 30px;
+  }
+
+  .yoga-videos-section {
+    width: 80%;
+  }
+}

@@ -1,0 +1,193 @@
+.navbar {
+  height: 85px;
+  background-color: lightgray;
+  display: flex;
+  align-items: center;
+
+}
+
+.left {
+  object-fit: contain;
+  flex: 3;
+}
+
+.middle {
+  flex: 1;
+}
+
+.logo-link {
+  display: flex;
+  text-decoration: none;
+}
+
+.logo {
+  width: 70px;
+  height: 60px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.life-title {
+  height: 67px;
+  margin: 10px;
+}
+
+.home-link {
+  padding: 0;
+}
+
+.link {
+  color: black;
+  text-decoration: none;
+  width: 100%;
+}
+
+.link:visited {
+  color: black;
+}
+
+.hamnav {
+  flex: 3;
+}
+
+#hamitems > Link {
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+}
+
+#hamnav label,
+#hamburger {
+  display: none;
+  justify-content: right;
+}
+
+.MuiList-root {
+  background-color: lightgray;
+  padding: 0 !important;
+}
+
+.MuiListItem-root {
+  border-top: 1px solid black !important;
+}
+
+@media screen and (max-width: 1200px) {
+  .navbar {
+    height: 70px;
+    align-items: flex-start;
+  }
+
+  .logo {
+    width: 60px;
+    height: 50px;
+    margin-top: 10px;
+  }
+
+  .life-title {
+    height: 40px;
+    margin-top: 15px;
+  }
+
+  .middle {
+    padding-top: 20px;
+  }
+
+  .link {
+    margin-left: 0;
+  }
+
+  .link-button {
+    width: 100%;
+    border-top: 1px solid black !important;
+    background-color: lightgray !important;
+    border-radius: 0 !important;
+  }
+
+  #basic-button {
+    border-radius: 0;
+    width: 100%;
+  }
+
+  #hamitems a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+  }
+
+  #hamnav {
+    text-align: right;
+  }
+
+  #hamnav label {
+    display: inline-block;
+    color: white;
+    font-style: normal;
+    font-size: 2em;
+    padding: 13px;
+    text-align: right;
+  }
+
+  #hamnav label:hover {
+    cursor: pointer;
+  }
+
+  #hamitems {
+    display: none;
+    background-color: lightgray;
+  }
+
+  #hamnav input:checked~#hamitems {
+    display: block;
+    background-color: lightgray;
+  }
+
+  #basic-button {
+    border-top: 1px solid black;
+  }
+
+  #basic-button {
+    background-color: lightgray;
+  }
+
+  .MuiPaper-root {
+    right: 125px;
+    top: 145px !important;
+    left: auto !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    height: 64px;
+    align-items: flex-start;
+  }
+
+  .logo {
+    width: 50px;
+    height: 40px;
+  }
+
+  .only-home-link {
+    margin-top: 8px;
+  }
+
+  #hamnav label {
+    margin-left: 42px;
+    padding: 11px;
+  } 
+
+  #hamitems {
+    margin-top: -10px;
+  }
+
+  .link {
+    font-size: 16px;
+  }
+
+  .MuiPaper-root {
+    width: 110px;
+    right: 108px;
+    top: 120px;
+    left: auto !important;
+  }
+}

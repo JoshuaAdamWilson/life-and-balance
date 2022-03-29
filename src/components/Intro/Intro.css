@@ -1,0 +1,251 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Vujahday+Script&display=swap');
+
+.header-picture {
+  background-size: cover;
+  width: 100%;
+  object-fit: contain;
+}
+
+@media (max-width: 1200px) {
+  .placement-picture {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .placement-picture {
+    width: 200px;
+    height: 200px;
+    margin: 200px 0 0 10%;
+  }
+
+  .first-section figure h1 {
+    font-size: 54px;
+  }
+
+  .mental-health {
+    padding-top: 20px;
+  }
+
+  .coaching {
+    padding-top: 30px;
+    padding-left: 140px;
+  }
+}
+
+/* ***************************** Second Section ************************************ */
+
+.second-section {
+  Width: 60%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin: 50px auto;
+  text-indent: 2em;
+}
+
+@media (max-width: 1200px) {
+  .second-section {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .second-section {
+    width: 80%;
+    font-size: 14px;
+    margin: 30px auto;
+  }
+}
+
+/* *****************************Third Section******************************************** */
+
+.third-section {
+  background-image: url('../images/blog.jpg');
+  width: 100%;
+  object-fit: contain;
+  max-height: 700px;
+}
+
+.fade-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 700px;
+}
+
+.quote {
+  color: white;
+  font-size: 40px;
+  width: 60%;
+  margin: auto;
+  padding-top: 220px;
+}
+
+.author {
+  color: rgba(255, 255, 255, 0.7);
+  margin: auto;
+  width: 50%;
+  font-size: 34px;
+  padding-top: 50px;
+}
+
+@media (max-width: 1200px) {
+  .quote {
+    width: 80%;
+    padding-top: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  .third-section {
+    height: 300px;
+  }
+
+  .fade-container {
+    height: 300px;
+  }
+
+  .quote {
+    padding-top: 70px;
+    font-size: 20px;
+  }
+
+  .author {
+    font-size: 24px;
+  }
+}
+
+/* ************************** Fourth Section ********************************* */
+
+.fourth-section {
+  margin: auto;
+  width: 800px;
+  text-align: center;
+  padding-top: 50px;
+  
+}
+
+.posts-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  padding-left: 0;
+}
+
+.post {
+  border-radius: 10px;
+  width: 200px;
+  height: 382 !important;
+  margin: 50px;
+  box-shadow: 0 0 10px 5px darkgreen;
+  padding-bottom: 10px;
+}
+
+.description p {
+  margin: 0;
+  padding: 0;
+}
+
+.post-picture {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px 10px 0 0;
+}
+
+.faded {
+  text-decoration: none;
+  color: black;
+}
+
+.post-title {
+  margin: 0 auto auto auto;
+  padding-top: 10px;
+}
+
+.date {
+  margin: 0;
+}
+
+.post-author {
+  margin: 0;
+}
+
+.description {
+  text-align: left;
+  text-indent: 1em;
+  margin-top: 10px;
+  padding: 0 20px;
+}
+
+.email-subscription {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-shadow: 0 0 10px 5px darkgreen;
+  width: 400px;
+  margin: auto;
+  border-radius: 20px;
+}
+
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subscribe input {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1200px) {
+  .posts-container {
+    flex-wrap: wrap;
+  }
+
+  .content-inside {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 200px;
+    height: 170px;
+    margin-top: -204px;
+    padding-top: 30px;
+    border-radius: 10px;
+  }
+
+  .post {
+    height: 190px;
+  }
+
+  .post-picture {
+    border-radius: 10px 10px 10px 10px;
+  }
+
+  .email-subscription {
+    width: 300px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .fourth-section {
+    width: 400px;
+  }
+
+  .posts-container {
+    margin-top: 20px;
+  }
+
+  .post {
+    margin: 10px;
+    padding: auto;
+  }
+
+  .email-subscription {
+    width: 250px;
+  }
+}

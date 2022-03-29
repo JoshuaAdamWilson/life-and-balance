@@ -1,0 +1,5 @@
+.not-found-picture {
+    background-size: cover;
+    width: 100%;
+    object-fit: contain;
+}

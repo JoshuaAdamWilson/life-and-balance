@@ -1,0 +1,51 @@
+.hello-author {
+  margin-bottom: 0;
+}
+
+.input-form {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: auto;
+}
+
+.uploadContainer {
+  margin-top: 30px;
+  margin-bottom: 0px;
+  display: flex;
+}
+
+.photo-requirement {
+  margin-top: 0px;
+  background-color: pink;
+  width: 110px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.uploadImage {
+  width: 200px;
+}
+
+.input-form input {
+  margin-bottom: 20px;
+}
+
+.write-input-title {
+  width: 300px;
+}
+
+.styling-buttons {
+  padding: 0;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+.write-input-content {
+  min-height: 300px;
+}
+
+.write-submit {
+  margin: 20px auto;
+  width: 70px;
+}

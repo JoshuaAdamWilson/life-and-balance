@@ -1,0 +1,21 @@
+
+.education-picture {
+  background-size: cover;
+  width: 100%;
+  object-fit: contain;
+}
+
+.education-information {
+  Width: 60%;
+  margin: 50px auto;
+}
+
+.education-information p {
+    text-indent: 2em;
+}
+
+@media (max-width: 768px) {
+  .education-information {
+    width: 80%;
+  }
+}

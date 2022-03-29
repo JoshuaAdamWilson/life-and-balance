@@ -1,0 +1,10 @@
+.contact {
+  text-align: center;
+  margin: 50px auto;
+}
+
+@media (max-width: 768px) {
+  .contact {
+    width: 80%;
+  }
+}

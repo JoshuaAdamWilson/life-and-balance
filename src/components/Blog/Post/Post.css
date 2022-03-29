@@ -1,0 +1,40 @@
+.single-post-container {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.icon {
+  margin: 10px;
+  cursor: pointer;
+}
+
+.single-blog-post-picture {
+  width: 400px;
+}
+
+.single-blog-post-title-input {
+  margin: 10px;
+  font-size: 24px;
+  width: 300px;
+  text-align: center;
+  color: gray;
+  border: none;
+  border-bottom: 1px solid gray;
+}
+
+.single-blog-post-title-input:focus {
+  outline: none;
+}
+
+.blog-content p {
+  text-align: left;
+  text-indent: 2em;
+  white-space: pre-wrap;
+}
+
+.single-blog-description-input {
+  width: 80%;
+  height: 500px;
+}

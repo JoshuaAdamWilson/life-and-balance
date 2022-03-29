@@ -10,7 +10,7 @@ const Post = () => {
   const path = location.pathname.split("/")[2]
   const [ post, setPost ] = useState({})
   const [ redirect, setRedirect ] = useState(false)
-  const PF = "http://localhost:5000/images/"
+  const PF = "https://life-and-balance.herokuapp.com/images/"
   const { user } = useContext(Context)
   const [ title, setTitle ] = useState("")
   const [ desc, setDesc ] = useState("")
@@ -19,7 +19,7 @@ const Post = () => {
   useEffect(() => {
     const getPost = async () => {
       try {
-        const response = await axios.get("/posts/" + path)
+        const response = await axios.get("https://life-and-balance.herokuapp.com/posts/" + path)
         setPost(response.data)
         setTitle(response.data.title)
         setDesc(response.data.desc)
@@ -32,7 +32,7 @@ const Post = () => {
 
   const handleDelete = async () => {
     try {
-      await axios.delete("/posts/" + path, { data: { username: user.username }})
+      await axios.delete("https://life-and-balance.herokuapp.com/posts/" + path, { data: { username: user.username }})
       window.location.replace("/")
     } catch (error) {
       console.log(error)
@@ -41,7 +41,7 @@ const Post = () => {
 
   const handleUpdate = async () => {
     try {
-      await axios.put("/posts/" + path, { username: user.username, title, desc })
+      await axios.put("https://life-and-balance.herokuapp.com/posts/" + path, { username: user.username, title, desc })
       setUpdateMode(false)
     } catch (error) {
       console.log(error)

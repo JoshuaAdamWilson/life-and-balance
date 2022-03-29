@@ -8,11 +8,11 @@ const Blog = () => {
   const [ search, setSearch ] = useState('')
   const [ posts, setPosts ] = useState([])
   const [ foundPosts, setFoundPosts ] = useState(posts)
-  const PF = "http://localhost:5000/images/"
+  const PF = "https://life-and-balance.herokuapp.com/images/"
 
   useEffect(() => {
     const fetchPosts = async () => {
-      const response = await axios.get("/posts")
+      const response = await axios.get("https://life-and-balance.herokuapp.com/posts")
       setPosts(response.data)
       setFoundPosts(response.data)
     }

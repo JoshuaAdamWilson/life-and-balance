@@ -6,11 +6,11 @@ import axios from "axios"
 
 const Intro = () => {
   const [ posts, setPosts ] = useState([])
-  const PF = "http://localhost:5000/images/"
+  const PF = "https://life-and-balance.herokuapp.com/images/"
 
   useEffect(() => {
     const fetchPosts = async () => {
-      const response = await axios.get("/recent")
+      const response = await axios.get("https://life-and-balance.herokuapp.com/recent")
       setPosts(response.data)
     }
     fetchPosts()

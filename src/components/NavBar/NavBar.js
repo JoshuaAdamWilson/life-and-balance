@@ -120,7 +120,15 @@ const NavBar = () => {
                 </Button>
               </Link>
             </>
-          ) : ( <></>)}
+          ) : ( 
+            <>
+              <Link to="/access" className='link home-link blog-link' onClick={closeNavBar}>
+                <Button className="link-button" onClick={closeNavBar}>
+                  Login
+                </Button>
+              </Link>
+            </>
+          )}
         </div>
       </div>
     </div>

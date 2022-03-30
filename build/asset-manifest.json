@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e37c794f.css",
+    "main.js": "/static/js/main.d9f75c82.js",
+    "static/media/resources.jpg": "/static/media/resources.389c29834d237f19a48f.jpg",
+    "static/media/blog.jpg": "/static/media/blog.97dc1e62e8f347876237.jpg",
+    "static/media/header-picture-2.jpg": "/static/media/header-picture-2.f86387e67f3743c0d8e1.jpg",
+    "static/media/about.jpg": "/static/media/about.ffaa8078bc0aee685ca8.jpg",
+    "static/media/yoga.jpg": "/static/media/yoga.96ba59d7c1f7611ca071.jpg",
+    "static/media/events.jpg": "/static/media/events.1f64d9ce0a679758bbb1.jpg",
+    "static/media/education.jpg": "/static/media/education.d470c948e18a5ff70b4e.jpg",
+    "static/media/spirituality.jpg": "/static/media/spirituality.4a2fd77ab3f8e368a889.jpg",
+    "static/media/life-quote-logo.png": "/static/media/life-quote-logo.f7f6fcf899731efbd1ea.png",
+    "static/media/notfoundpicture.jpg": "/static/media/notfoundpicture.9312322ada5a53f55a35.jpg",
+    "static/media/life.png": "/static/media/life.44d6a693753ac4114c53.png",
+    "static/media/blog-preview.jpg": "/static/media/blog-preview.49ffb9a113557171919a.jpg",
+    "static/media/spirituality-pic.jpg": "/static/media/spirituality-pic.00df3c1e490c11fc1d08.jpg",
+    "static/media/dragonfly.png": "/static/media/dragonfly.dc39c22f17708cf87be7.png",
+    "static/media/leaf-gif.gif": "/static/media/leaf-gif.3fb682f9b0f5dc68fdf8.gif",
+    "static/media/placement-picture.jpg": "/static/media/placement-picture.634260cb480ec910a765.jpg",
+    "index.html": "/index.html",
+    "main.e37c794f.css.map": "/static/css/main.e37c794f.css.map",
+    "main.d9f75c82.js.map": "/static/js/main.d9f75c82.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e37c794f.css",
+    "static/js/main.d9f75c82.js"
+  ]
+}

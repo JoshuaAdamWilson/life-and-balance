@@ -41,6 +41,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/404" element={<NotFound />} />
           <Route exact path="*" element={<NotFound />} />
+          <Route path="/register" element={<Register />} />
           {user ? (
             <>
               <Route path="/register" element={<Register />} />

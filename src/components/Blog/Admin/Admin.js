@@ -17,11 +17,11 @@ const Admin = () => {
 
   useEffect(() => {
     const getUser = async () => {
-      const response = await axios.get(`https://life-and-balance.herokuapp.com/users/${user._id}`)
+      const response = await axios.get(`https://life-and-balance.herokuapp.com/api/users/${user._id}`)
       setCurrentUser(response.data)
     }
     const getAllUsers = async () => {
-      const response = await axios.get('https://life-and-balance.herokuapp.com/users/all')
+      const response = await axios.get('https://life-and-balance.herokuapp.com/api/users/all')
       setAllUsers(response.data)
     }
     getUser()
@@ -31,7 +31,7 @@ const Admin = () => {
 
   const deleteUser = async (userToDelete) => {
     try {
-      await axios.delete("https://life-and-balance.herokuapp.com/users/" + userToDelete._id, { data: userToDelete })
+      await axios.delete("https://life-and-balance.herokuapp.com/api/users/" + userToDelete._id, { data: userToDelete })
       window.location.reload()
     } catch (error) {
       console.log(error)
@@ -47,7 +47,7 @@ const Admin = () => {
       password
     }
     try {
-      const response = await axios.put("https://life-and-balance.herokuapp.com/users/" + user._id, updatedUser)
+      const response = await axios.put("https://life-and-balance.herokuapp.com/api/users/" + user._id, updatedUser)
       setMessage(true)
       setTimeout(() => {
         setMessage(false)

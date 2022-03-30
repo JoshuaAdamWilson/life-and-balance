@@ -19,7 +19,7 @@ const Post = () => {
   useEffect(() => {
     const getPost = async () => {
       try {
-        const response = await axios.get("https://life-and-balance.herokuapp.com/posts/" + path)
+        const response = await axios.get("https://life-and-balance.herokuapp.com/api/posts/" + path)
         setPost(response.data)
         setTitle(response.data.title)
         setDesc(response.data.desc)
@@ -32,7 +32,7 @@ const Post = () => {
 
   const handleDelete = async () => {
     try {
-      await axios.delete("https://life-and-balance.herokuapp.com/posts/" + path, { data: { username: user.username }})
+      await axios.delete("https://life-and-balance.herokuapp.com/api/posts/" + path, { data: { username: user.username }})
       window.location.replace("/")
     } catch (error) {
       console.log(error)
@@ -41,7 +41,7 @@ const Post = () => {
 
   const handleUpdate = async () => {
     try {
-      await axios.put("https://life-and-balance.herokuapp.com/posts/" + path, { username: user.username, title, desc })
+      await axios.put("https://life-and-balance.herokuapp.com/api/posts/" + path, { username: user.username, title, desc })
       setUpdateMode(false)
     } catch (error) {
       console.log(error)

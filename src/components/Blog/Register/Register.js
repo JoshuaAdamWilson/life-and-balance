@@ -13,7 +13,7 @@ const handleSubmit = async (e) => {
   e.preventDefault()
   setError(false)
   try {
-    const res = await axios.post("https://life-and-balance.herokuapp.com/auth/register", {
+    const res = await axios.post("https://life-and-balance.herokuapp.com/api/auth/register", {
       username,
       email,
       password

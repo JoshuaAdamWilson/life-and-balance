@@ -42,7 +42,7 @@ const PostUpload = () => {
     }
     try {
       console.log(newPost)
-      const res = await axios.post('https://life-and-balance.herokuapp.com/posts', newPost)
+      const res = await axios.post('https://life-and-balance.herokuapp.com/api/posts', newPost)
       
       window.location.replace("/blog/" + res.data._id)
     } catch (error) {

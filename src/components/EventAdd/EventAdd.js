@@ -27,13 +27,13 @@ const EventAdd = () => {
       data.append("file", file)
       newEvent.photo = filename
       try {
-        await axios.post("https://life-and-balance.herokuapp.com/upload", data)
+        await axios.post("https://life-and-balance.herokuapp.com/api/upload", data)
       } catch (error) {
         console.log(error)
       }
     }
     try {
-      const res = await axios.post('https://life-and-balance.herokuapp.com/events', newEvent)
+      const res = await axios.post('https://life-and-balance.herokuapp.com/api/events', newEvent)
       window.location.replace("/events")
     } catch (error) {
       console.log(error)

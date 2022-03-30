@@ -12,7 +12,7 @@ const Blog = () => {
 
   useEffect(() => {
     const fetchPosts = async () => {
-      const response = await axios.get("https://life-and-balance.herokuapp.com/posts")
+      const response = await axios.get("https://life-and-balance.herokuapp.com/api/posts")
       setPosts(response.data)
       setFoundPosts(response.data)
     }

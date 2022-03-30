@@ -10,7 +10,7 @@ const Intro = () => {
 
   useEffect(() => {
     const fetchPosts = async () => {
-      const response = await axios.get("https://life-and-balance.herokuapp.com/recent")
+      const response = await axios.get("https://life-and-balance.herokuapp.com/api/recent")
       setPosts(response.data)
     }
     fetchPosts()

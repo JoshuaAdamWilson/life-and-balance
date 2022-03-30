@@ -11,7 +11,7 @@ const Events = () => {
     const [ searchEvent, setSearchEvent ] = useState('')
     const [ eventsList, setEventsList ] = useState([])
     const [ foundEvents, setFoundEvents ] = useState(eventsList)
-    const PF = "http://localhost:5000/images/"
+    const PF = "https://life-and-balance.herokuapp.com/images/"
     const { user } = useContext(Context)
     const path = location.pathname.split("/")[1]
 
@@ -30,7 +30,7 @@ const Events = () => {
 
     useEffect(() => {
         const fetchEvents = async () => {
-            const response = await axios.get("/events")
+            const response = await axios.get("https://life-and-balance.herokuapp.com/api/events")
             setEventsList(response.data)
             setFoundEvents(response.data)
         }
@@ -50,7 +50,7 @@ const Events = () => {
     const handleDelete = async (event) => {
         console.log(event.target.id)
         try {
-            await axios.delete(`/events/${event.target.id}`, { data: { username: user.username }})
+            await axios.delete(`https://life-and-balance.herokuapp.com/api/events/${event.target.id}`, { data: { username: user.username }})
             window.location.replace("/events")
         } catch (error) {
             console.log(error)
@@ -82,7 +82,7 @@ const Events = () => {
     ReactModal.setAppElement('#root');
 
     const openModal = async (e) => {
-        const response = await axios.get(`/events/${e.target.id}`, { data: { username: user.username }})
+        const response = await axios.get(`https://life-and-balance.herokuapp.com/api/events/${e.target.id}`, { data: { username: user.username }})
         setIsOpen(true)
         setEventTitle(response.data.title)
         setGeoLocation(response.data.location)
@@ -92,7 +92,7 @@ const Events = () => {
 
     const updateEvent = async (e) => {
         try {
-            await axios.put(`/events/${eventId}`, { 
+            await axios.put(`https://life-and-balance.herokuapp.com/api/events/${eventId}`, { 
                 username: user.username,
                 title: eventTitle,
                 dateTime,

@@ -72,6 +72,11 @@ const Admin = () => {
         <Link to="/register">Register New User</Link>
         <Link to="/blog/post-upload">Add a blog Post</Link>
         <Link to="/add-event">Add an Event</Link>
+        {user.admin && (
+          <>
+            <Link to="https://login.mailchimp.com">Manage Newsletter/Subscribers</Link>
+          </>
+        )}
       </div>
 
       <h2 className="admin-users">Update Your Account</h2>

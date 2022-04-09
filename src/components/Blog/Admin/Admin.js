@@ -54,6 +54,7 @@ const Admin = () => {
         setMessage(false)
         setNotification("")
       }, 5000);
+      return
     }
     if (email === "") {
       setMessage(true)
@@ -62,6 +63,7 @@ const Admin = () => {
         setMessage(false)
         setNotification("")
       }, 5000);
+      return
     }
     if (password === "") {
       setMessage(true)
@@ -70,6 +72,7 @@ const Admin = () => {
         setMessage(false)
         setNotification("")
       }, 5000);
+      return
     }
     try {
       const response = await axios.put("https://life-and-balance.herokuapp.com/api/users/" + user._id, updatedUser)

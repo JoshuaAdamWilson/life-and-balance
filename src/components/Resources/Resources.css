@@ -85,8 +85,8 @@
 
 .nami {
   text-align: center;
-  width: 78%;
   margin: auto;
+  width: 80%;
 }
 
 .nami p {
@@ -118,10 +118,21 @@
 
   .spirituality-figure {
     padding-right: 0;
+    margin: 20px auto;
+    /* width: 380px; */
+  }
+
+  .spirituality-pic {
+    width: 350px;
+  }
+
+  .nami {
+    width: 100%;
+    /* margin: auto; */
   }
 
   .nami-values {
-    width: 340px;
+    width: 300px;
   }
 }
 

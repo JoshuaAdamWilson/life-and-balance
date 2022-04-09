@@ -70,7 +70,7 @@ const Intro = () => {
                   )}
                   <p className="date">{new Date(post.createdAt).toDateString()}</p>
                   <p className="post-author"><strong>Author:</strong><br />{post.username}</p>
-                  <div className="description" dangerouslySetInnerHTML={{__html: `${post.desc.slice(0, 55)}... <em>READ MORE</em>`}} />
+                  <div className="description" dangerouslySetInnerHTML={{__html: `${post.desc.slice(0, 50)}... <em>READ MORE</em>`}} />
                   {/* <p className="description">{post.desc.slice(0, 55)}...</p> */}
                 </div>
               </Link>
@@ -110,7 +110,7 @@ const Intro = () => {
                 <button type="submit" name="subscribe" id="mc-embedded-subscribe" className="button">Subscibe</button>
                 <p className="brandingLogo">
                   <a href="http://eepurl.com/hXs4Uz" title="Mailchimp - email marketing made easy and fun">
-                    {/* <img src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg" /> */}
+                    <img src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg" />
                   </a>
                 </p>
               </div>

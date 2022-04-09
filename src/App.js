@@ -20,6 +20,9 @@ import Admin from './components//Blog/Admin/Admin';
 import Register from './components/Blog/Register/Register';
 import { Context } from './context/Context';
 import EventAdd from './components/EventAdd/EventAdd';
+import Privacy from './components/Privacy/Privacy';
+import Terms from './components/Terms/Terms';
+import Disclaimer from './components/Disclaimer/Disclaimer';
 
 function App() {
   const { user } = useContext(Context)
@@ -39,6 +42,9 @@ function App() {
           <Route path="/events" element={<Events />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/privacy-policy" element={<Privacy />} />
+          <Route path="/terms" element={<Terms />} />
+          <Route path="/disclaimer" element={<Disclaimer />} />
           <Route path="/404" element={<NotFound />} />
           <Route exact path="*" element={<NotFound />} />
           {user ? (

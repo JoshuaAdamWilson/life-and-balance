@@ -2,8 +2,8 @@
   text-align: center;
   color: white;
   background-color: lightgray;
-  height: 200px;
-  margin-top: 80px;
+  height: 230px;
+  margin-top: 40px;
   padding-top: 20px;
   padding-bottom: 50px;
   color: black;
@@ -49,9 +49,9 @@
   flex: 3;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .footer {
-    height: 420px;
+    height: 450px;
   }
 
   .footer-container {

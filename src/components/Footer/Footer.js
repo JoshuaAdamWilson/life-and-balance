@@ -1,6 +1,7 @@
 import React from 'react'
 import './Footer.css'
 import FooterPicture from '../images/life-quote-logo.png'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
@@ -14,15 +15,15 @@ const Footer = () => {
               <br />
               <strong>Crisis Text Line:</strong><br />Text Hello to 741741
               <br />
-              <strong>National Domestic Violence Hotline:</strong><br />Text "START" to 88788 or call 1-800-799-7233
+              <strong>National Domestic Violence Hotline:</strong><br />Text "START" to 88788 or<br /> Call 1-800-799-7233
             </p>
           </div>
         </div>
         <img src={FooterPicture} alt="logo and website name" className="footer-picture" />
         <div className="footer-second">
-          <a href="http://localhost:3000/">Privacy Policy</a>
-          <a href="http://localhost:3000/">Terms & Conditions</a>
-          <a href="http://localhost:3000/">Disclaimer</a>
+          <Link to="/privacy-policy">Privacy Policy</Link>
+          <Link to="/terms">Terms & Conditions</Link>
+          <Link to="/disclaimer">Disclaimer</Link>
         </div>
       </div>
       <p className="copyright">

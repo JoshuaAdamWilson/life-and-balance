@@ -41,17 +41,17 @@ const Blog = () => {
       <div className="blog-section">
         <div className="blog-posts-container">
           <p className='blog-intro'>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
-            minus porro amet sint, ullam maiores unde, vitae rem facilis obcaecati
-            numquam nulla alias, deleniti eos temporibus aspernatur quos odit
-            officiis fugit iste ratione at! Aliquid mollitia ab, reprehenderit
-            deserunt ea iure autem earum perspiciatis ad ipsum eveniet eum iste
-            molestias quibusdam consequuntur quo voluptas! Natus, possimus magnam
-            voluptate minima saepe adipisci, assumenda earum impedit esse aliquid
-            sint quam inventore odio debitis ex officia autem, eos fuga nostrum
-            laborum. Aspernatur provident quas labore cupiditate, amet totam
-            accusamus corrupti debitis odio natus temporibus similique ipsum quia
-            in! Obcaecati minima non sunt quo.
+            Welcome to Life and Balance. As the world continues to fight to
+            figure everything out, we must also fight to figure out who we are.
+            Here, you can find direction and hope on that path. As an individual,
+            we should continue to evolve and recreate ourselves every day. We must learn new
+            things and do our best to expand our minds adding versatility into
+            our lives. You should not be the same person you were last week. 
+            Create new habits and consistently upgrade <em>you</em> in all ways,
+            on all levels. This is a place where you can find that guidance,
+            that hope you need, and the strength to empower yourself. You are
+            the greatest project you will ever get to work on. Take your time.
+            <strong> Create Magic.</strong>
           </p>
           <div className="search">
             <i className="fas fa-search"></i>

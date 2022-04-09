@@ -14,6 +14,7 @@ const Admin = () => {
   const [ password, setPassword ] = useState("")
   const [ loaded, setLoaded ] = useState(false)
   const [ message, setMessage ] = useState(false)
+  const [ notification, setNotification ] = useState("")
 
   useEffect(() => {
     const getUser = async () => {
@@ -46,11 +47,37 @@ const Admin = () => {
       email,
       password
     }
+    if (username === "") {
+      setMessage(true)
+      setNotification("Please fill in your username!")
+      setTimeout(() => {
+        setMessage(false)
+        setNotification("")
+      }, 5000);
+    }
+    if (email === "") {
+      setMessage(true)
+      setNotification("Please fill in your email!")
+      setTimeout(() => {
+        setMessage(false)
+        setNotification("")
+      }, 5000);
+    }
+    if (password === "") {
+      setMessage(true)
+      setNotification("Please retype your password!")
+      setTimeout(() => {
+        setMessage(false)
+        setNotification("")
+      }, 5000);
+    }
     try {
       const response = await axios.put("https://life-and-balance.herokuapp.com/api/users/" + user._id, updatedUser)
       setMessage(true)
+      setNotification("Updated! Please logout and log back in using your new credentials!")
       setTimeout(() => {
         setMessage(false)
+        setNotification("")
         window.location.reload()
       }, 5000);
       
@@ -72,6 +99,11 @@ const Admin = () => {
         <Link to="/register">Register New User</Link>
         <Link to="/blog/post-upload">Add a blog Post</Link>
         <Link to="/add-event">Add an Event</Link>
+        {user.admin && (
+          <>
+            <Link to="https://login.mailchimp.com">Manage Newsletter/Subscribers</Link>
+          </>
+        )}
       </div>
 
       <h2 className="admin-users">Update Your Account</h2>
@@ -94,7 +126,7 @@ const Admin = () => {
           onChange={e => setPassword(e.target.value)}
         />
         <button type="submit">Update</button>
-        {message && <p className="message">Updated! Please logout and log back in<br /> using your new credentials!</p>}
+        {message && <p className="message">{notification}</p>}
       </form>
       {user.admin && (
         <>

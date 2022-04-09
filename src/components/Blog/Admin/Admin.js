@@ -99,11 +99,13 @@ const Admin = () => {
     <div className="admin-page">
       <h2 className="admin">Admin Panel</h2>
       <div className="navigation-section">
-        <Link to="/register">Register New User</Link>
         <Link to="/blog/post-upload">Add a blog Post</Link>
         <Link to="/add-event">Add an Event</Link>
         {user.admin && (
-          <a href="https://login.mailchimp.com" target="_blank" rel="noopener noreferrer">Manage Newsletter/Subscribers</a>
+          <>
+            <Link to="/register">Register New User</Link>
+            <a href="https://login.mailchimp.com" target="_blank" rel="noopener noreferrer">Manage Newsletter/Subscribers</a>
+          </>
         )}
       </div>
 

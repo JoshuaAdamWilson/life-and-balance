@@ -103,7 +103,7 @@ const Admin = () => {
         <Link to="/blog/post-upload">Add a blog Post</Link>
         <Link to="/add-event">Add an Event</Link>
         {user.admin && (
-          <a href="https://login.mailchimp.com">Manage Newsletter/Subscribers</a>
+          <a href="https://login.mailchimp.com" target="_blank" rel="noopener noreferrer">Manage Newsletter/Subscribers</a>
         )}
       </div>
 

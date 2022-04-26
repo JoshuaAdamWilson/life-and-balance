@@ -3,8 +3,11 @@ import './Blog.css'
 import BlogPicture from '../images/blog.jpg';
 import { Link } from 'react-router-dom';
 import axios from "axios"
+// import InfiniteScroll from 'react-infinite-scroller';
+import { LazyLoad } from 'react-observer-api';
 
 const Blog = () => {
+  const postsPerPage = 10;
   const [ search, setSearch ] = useState('')
   const [ posts, setPosts ] = useState([])
   const [ foundPosts, setFoundPosts ] = useState(posts)
@@ -64,33 +67,41 @@ const Blog = () => {
             />
           </div>
           <ul className="blog-posts">
-            {foundPosts && foundPosts.length > 0 ? (
-              foundPosts
-                .sort((a, b) => b.createdAt > a.createdAt ? 1: -1)
-                .map((post) => {
-                  return <li key={post._id} className="blog-post">
-                    <Link to={`/blog/${post._id}`} className="blog-faded">
-                      <img className="blog-post-picture" src={PF + post.photo} alt="post" />
-                      <div className="blog-content-inside">
-                        {post.title && post.title.split(" ").length > 3 ? (
-                          <h2 className="blog-post-title">{post.title.split(" ").slice(0, 3).join(" ")}...</h2>
-                        ) : (
-                          <h2 className="blog-post-title">{post.title}</h2>
-                        )}
-                        <p className="blog-post-author">Author: {post.username}</p>
-                        <p className="blog-date">{new Date(post.createdAt).toDateString()}</p>
-                        <div className="blog-description" dangerouslySetInnerHTML={{__html: `${post.desc.slice(0, 110)}... <em>READ MORE</em>`}} />
-                        {/* <p className="blog-description">{post.desc.slice(0, 110)} ... <em>READ MORE</em></p> */}
-                      </div>
-
-                    </Link>
-                  </li>
-                })
-                
-              ) : (
-                <h2>No Results Found!</h2>
-              )
-            }
+            {/* <InfiniteScroll
+              pageStart={0}
+              loadMore={loadFunc}
+              hasMore={true || false}
+              loader={<div className="loader" key={0}>Loading ...</div>}
+            > */}
+              {foundPosts && foundPosts.length > 0 ? (
+                foundPosts
+                  .sort((a, b) => b.createdAt > a.createdAt ? 1: -1)
+                  .map((post) => {
+                    return <li key={post._id} className="blog-post">
+                      <LazyLoad>
+                        <Link to={`/blog/${post._id}`} className="blog-faded">
+                          <img className="blog-post-picture" src={PF + post.photo} alt="post" />
+                          <div className="blog-content-inside">
+                            {post.title && post.title.split(" ").length > 3 ? (
+                              <h2 className="blog-post-title">{post.title.split(" ").slice(0, 3).join(" ")}...</h2>
+                            ) : (
+                              <h2 className="blog-post-title">{post.title}</h2>
+                            )}
+                            <p className="blog-post-author">Author: {post.username}</p>
+                            <p className="blog-date">{new Date(post.createdAt).toDateString()}</p>
+                            <div className="blog-description" dangerouslySetInnerHTML={{__html: `${post.desc.slice(0, 110)}... <em>READ MORE</em>`}} />
+                            {/* <p className="blog-description">{post.desc.slice(0, 110)} ... <em>READ MORE</em></p> */}
+                          </div>
+                        </Link>
+                      </LazyLoad>
+                    </li>
+                  })
+                  
+                ) : (
+                  <h2>No Results Found!</h2>
+                )
+              }
+            {/* </InfiniteScroll> */}
           </ul>
         </div>
       </div>

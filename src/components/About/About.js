@@ -8,6 +8,33 @@ const About = () => {
     <div className="about">
       <img src={AboutPicture} alt="about" className="about-picture" />
       <div className="about-section">
+        <p>
+          Family First Family Services LLC has been in business for 10 years as
+          of April 2022. During that time, we have helped countless people work
+          towards finding their own balance in their lives. Family First is a
+          person-centered organization that focuses on helping families and
+          individuals by providing resources, tools, and referrals to give them
+          the confidence to live a balanced life.
+        </p>
+        <p>
+          Through our years of practice, we have realized the lack of available
+          resources offered to the general public for those seeking a more
+          balanced life. Our desire is to collect and provide those resources
+          and share them with whoever is interested in their own personal
+          growth. If that is something that interests you please take time to
+          explore the website.
+        </p>
+        <p>
+          We are a small team that wishes to provide these resources, tools, and
+          referrals to all, however, we will not be able to provide any services
+          to any individual as this website is designed for you to develop your
+          own journey. If you are seeking individual help we have resources
+          available for you to find something that may work for you.
+        </p>
+        <h3 className="vision">
+          Our vision is to provide access to tools, resources, and referrals to everyone on
+          their journey to cultivating a balanced life at low to no cost.
+        </h3>
         <div className="stephanie">
           <img src={PersonPhoto} alt="Stephanie" />
           <div>

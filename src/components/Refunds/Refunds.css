@@ -1,0 +1,18 @@
+.refunds {
+  width: 60%;
+  margin: auto;
+}
+
+.refunds > h1, .refunds > h2 {
+  text-align: center !important;
+}
+
+.refunds > p {
+  text-indent: 2em;
+}
+
+
+
+.refunds-contact {
+  text-align: center;
+}

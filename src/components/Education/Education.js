@@ -6,77 +6,62 @@ const mentalIllnesses = [
   {
     index: 0,
     name: "Anxiety Disorders",
-    website: "https://www.mayoclinic.org/diseases-conditions/anxiety/symptoms-causes/syc-20350961"
+    website: "https://www.mentalhealth.gov/what-to-look-for/anxiety-disorders"
   },
   {
     index: 1,
     name: "Attention Deficit Hyperactivity Disorder (ADHD)",
-    website: "#"
+    website: "https://www.mentalhealth.gov/what-to-look-for/behavioral-disorders/adhd"
   },
   {
     index: 2,
     name: "Bipolar Disorder",
-    website: "#"
+    website: "https://www.mentalhealth.gov/what-to-look-for/mood-disorders/bipolar-disorder"
   },
   {
     index: 3,
     name: "Borderline Personality Disorder (BPD)",
-    website: "#"
+    website: "https://www.mentalhealth.gov/what-to-look-for/personality-disorders/borderline-personality-disorder"
   },
   {
     index: 4,
     name: "Depression",
-    website: "#"
-  },
-  {
-    index: 5,
-    name: "Dissociative Disorders",
-    website: "#"
+    website: "https://www.mentalhealth.gov/what-to-look-for/mood-disorders/depression"
   },
   {
     index: 6,
     name: "Dual Diagnosis/Co-Occurring Disorders (Substance Abuse and Mental Illness)",
-    website: "#"
-  },
-  {
-    index: 7,
-    name: "Early Psychosis and Psychosis",
-    website: "#"
+    website: "https://www.mentalhealth.gov/what-to-look-for/mental-health-substance-use-disorders"
   },
   {
     index: 8,
     name: "Eating Disorders",
-    website: "#"
+    website: "https://www.mentalhealth.gov/what-to-look-for/eating-disorders"
   },
   {
     index: 9,
     name: "Obsessive-Compulsive Disorder (OCD)",
-    website: "#"
+    website: "https://www.mentalhealth.gov/what-to-look-for/anxiety-disorders/obsessive-compulsive-disorder"
   },
   {
     index: 10,
     name: "Panic Disorder",
-    website: "#"
+    website: "https://www.mentalhealth.gov/what-to-look-for/anxiety-disorders/panic-disorder"
   },
   {
     index: 11,
     name: "Posttraumatic Stress Disorder (PTSD)",
-    website: "#"
-  },
-  {
-    index: 12,
-    name: "Schizoaffective Disorder",
-    website: "#"
+    website: "https://www.mentalhealth.gov/what-to-look-for/post-traumatic-stress-disorder"
   },
   {
     index: 13,
     name: "Schizophrenia",
-    website: "#"
+    website: "https://www.mentalhealth.gov/what-to-look-for/psychotic-disorders/schizophrenia"
   },
   {
     index: 14,
     name: "Seasonal Affective Disorder (SAD)",
-    website: "#"
+    website: "https://www.mentalhealth.gov/what-to-look-for/mood-disorders/sad"
   }
 ]
 

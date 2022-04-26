@@ -1,0 +1,21 @@
+.privacy {
+  width: 60%;
+  margin: auto;
+}
+
+.privacy > h1, .privacy > h2 {
+  text-align: center !important;
+}
+
+.privacy > p {
+  text-indent: 2em;
+}
+
+.privacy > ul {
+  width: 40%;
+  margin: auto;
+}
+
+.privacy-contact {
+  text-align: center;
+}

@@ -1,0 +1,21 @@
+.acceptable {
+  width: 60%;
+  margin: auto;
+}
+
+.acceptable > h1, .acceptable > h2 {
+  text-align: center !important;
+}
+
+.acceptable > p {
+  text-indent: 2em;
+}
+
+.acceptable > ul {
+  width: 40%;
+  margin: auto;
+}
+
+.acceptable-contact {
+  text-align: center;
+}

@@ -1,31 +1,33 @@
-import React, { useContext } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import './App.css';
-import About from './components/About/About';
-import Blog from './components/Blog/Blog';
-import Post from './components/Blog/Post/Post';
-import PostUpload from './components/Blog/PostUpload/PostUpload';
-import Contact from './components/Contact/Contact';
-import Education from './components/Education/Education';
-import Events from './components/Events/Events';
-import Footer from './components/Footer/Footer';
-import Intro from './components/Intro/Intro';
-import Login from './components/Blog/Login/Login'
-import NavBar from './components/NavBar/NavBar';
-import NotFound from './components/NotFound/NotFound';
-import Spirituality from './components/Spirituality/Spirituality';
-import Resources from './components/Resources/Resources';
-import Yoga from './components/Yoga/Yoga';
-import Admin from './components//Blog/Admin/Admin';
-import Register from './components/Blog/Register/Register';
-import { Context } from './context/Context';
-import EventAdd from './components/EventAdd/EventAdd';
-import Privacy from './components/Privacy/Privacy';
-import Terms from './components/Terms/Terms';
-import Disclaimer from './components/Disclaimer/Disclaimer';
+import React, { useContext } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "./App.css";
+import About from "./components/About/About";
+import Blog from "./components/Blog/Blog";
+import Post from "./components/Blog/Post/Post";
+import PostUpload from "./components/Blog/PostUpload/PostUpload";
+import Contact from "./components/Contact/Contact";
+import Education from "./components/Education/Education";
+import Events from "./components/Events/Events";
+import Footer from "./components/Footer/Footer";
+import Intro from "./components/Intro/Intro";
+import Login from "./components/Blog/Login/Login";
+import NavBar from "./components/NavBar/NavBar";
+import NotFound from "./components/NotFound/NotFound";
+import Spirituality from "./components/Spirituality/Spirituality";
+import Resources from "./components/Resources/Resources";
+import Yoga from "./components/Yoga/Yoga";
+import Admin from "./components//Blog/Admin/Admin";
+import Register from "./components/Blog/Register/Register";
+import { Context } from "./context/Context";
+import EventAdd from "./components/EventAdd/EventAdd";
+import Privacy from "./components/Privacy/Privacy";
+import Terms from "./components/Terms/Terms";
+import Disclaimer from "./components/Disclaimer/Disclaimer";
+import Refunds from "./components/Refunds/Refunds";
+import AcceptableUse from "./components/AcceptableUse/AcceptableUse";
 
 function App() {
-  const { user } = useContext(Context)
+  const { user } = useContext(Context);
 
   return (
     <BrowserRouter>
@@ -45,6 +47,8 @@ function App() {
           <Route path="/privacy-policy" element={<Privacy />} />
           <Route path="/terms" element={<Terms />} />
           <Route path="/disclaimer" element={<Disclaimer />} />
+          <Route path="/refunds" element={<Refunds />} />
+          <Route path="/acceptable-use" element={<AcceptableUse />} />
           <Route path="/404" element={<NotFound />} />
           <Route exact path="*" element={<NotFound />} />
           {user ? (

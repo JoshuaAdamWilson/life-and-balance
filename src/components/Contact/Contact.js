@@ -19,10 +19,10 @@ const Contact = () => {
                 suggestions, and anything else, feel free to send us an email at:
             </p>
             <h4>
-                lifeandbalance1@gmail.com
+                lifeinbalance@family3f1s.com
             </h4>
             <p>
-                We will do our best to get back to you in 2-3 business days!
+                We will do our best to get back to you when we can!
             </p>
         </div>
     )

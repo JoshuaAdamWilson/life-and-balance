@@ -1,0 +1,18 @@
+.disclaimer {
+  width: 60%;
+  margin: auto;
+}
+
+.disclaimer > h1, .disclaimer > h2 {
+  text-align: center !important;
+}
+
+.disclaimer > p {
+  text-indent: 2em;
+}
+
+
+
+.disclaimer-contact {
+  text-align: center;
+}

@@ -1,0 +1,16 @@
+.terms {
+  width: 60%;
+  margin: auto;
+}
+
+.terms > h1, .terms > h2 {
+  text-align: center !important;
+}
+
+.terms > p {
+  text-indent: 2em;
+}
+
+.terms-contact {
+  text-align: center;
+}

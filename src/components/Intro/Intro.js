@@ -79,46 +79,45 @@ const Intro = () => {
         </ul>
 
         {/* <!-- Begin Mailchimp Signup Form --> */}
-
         <div id="mc_embed_signup" className="email-subscription">
-          <form action="https://gmail.us14.list-manage.com/subscribe/post?u=9f14f9f47caafc216a4ace425&amp;id=f31536ec5d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="subscribe" target="_blank" noValidate>
+          <form action="https://family3f1s.us14.list-manage.com/subscribe/post?u=a8d506e0336078361bb54024b&amp;id=a0b61fafc0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="subscribe" target="_blank" noValidate>
             <div id="mc_embed_signup_scroll">
               <h2>Subscribe</h2>
               <div className="indicates-required">
-                <span className="asterisk">*</span> indicates required
+                <span className="asterisk">* indicates required</span>
               </div>
               <div className="mc-field-group">
-                <label htmlFor="mce-EMAIL">Email Address  <span className="asterisk">*</span></label>
+                <label htmlFor="mce-EMAIL">
+                  Email Address
+                  <span className="asterisk">*</span>
+                </label>
                 <input type="email" name="EMAIL" className="required email" id="mce-EMAIL" />
               </div>
               <div className="mc-field-group">
-                <label htmlFor="mce-FNAME">First Name </label>
+                <label htmlFor="mce-FNAME">First Name</label>
                 <input type="text" name="FNAME" className="" id="mce-FNAME" />
               </div>
               <div id="mce-responses" className="clear foot">
                 <div className="response" id="mce-error-response" style={{display:"none"}}></div>
                 <div className="response" id="mce-success-response" style={{display:"none"}}></div>
               </div>
-
-            {/* <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups--> */}
-
-            <div style={{position: "absolute", left: "-5000px"}} aria-hidden="true">
-              <input type="text" name="b_9f14f9f47caafc216a4ace425_f31536ec5d" tabIndex="-1" />
-            </div>
-            <div className="optionalParent">
-              <div className="clear foot">
-                <button type="submit" name="subscribe" id="mc-embedded-subscribe" className="button">Subscibe</button>
-                <p className="brandingLogo">
-                  <a href="http://eepurl.com/hXs4Uz" title="Mailchimp - email marketing made easy and fun">
-                    <img src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg" />
-                  </a>
-                </p>
+              {/* <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups--> */}
+              <div style={{position: "absolute", left: "-5000px"}} aria-hidden="true">
+                <input type="text" name="b_a8d506e0336078361bb54024b_a0b61fafc0" tabIndex="-1" />
+              </div>
+              <div className="optionalParent">
+                <div className="clear foot">
+                  <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" className="button" />
+                  <p className="brandingLogo">
+                    <a href="http://eepurl.com/h0ufGT" title="Mailchimp - email marketing made easy and fun">
+                      <img src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg" />
+                    </a>
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-        </form>
-      </div>
-
+          </form>
+        </div>
         {/* <!--End mc_embed_signup--> */}
 
         {/* <div className="email-subscription">

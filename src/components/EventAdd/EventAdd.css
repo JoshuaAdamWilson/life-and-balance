@@ -1,0 +1,16 @@
+.event-post {
+  height: 800px;
+}
+
+.event-input-form {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  margin: auto;
+}
+
+.event-input-form input {
+  margin-bottom: 20px;
+}

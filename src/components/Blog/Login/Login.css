@@ -14,7 +14,7 @@ input {
     width: 250px;
 }
 
-button {
+.login-form > button {
     margin: 20px auto auto auto;
 }
 

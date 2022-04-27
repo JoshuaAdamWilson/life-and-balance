@@ -14,7 +14,7 @@ input {
   width: 242px;
 }
 
-button {
+.register-form > button {
   margin: 20px auto auto auto;
 }
 

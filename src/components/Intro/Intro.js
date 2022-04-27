@@ -90,10 +90,10 @@ const Intro = () => {
                         <div
                           className="description"
                           dangerouslySetInnerHTML={{
-                            __html: `${post.desc.slice(
-                              0,
-                              40,
-                            )}... <em>READ MORE</em>`,
+                            __html: `${post.desc
+                              .split(" ")
+                              .slice(0, 6)
+                              .join(" ")}... <em>READ MORE</em>`,
                           }}
                         />
                         {/* <p className="description">{post.desc.slice(0, 55)}...</p> */}

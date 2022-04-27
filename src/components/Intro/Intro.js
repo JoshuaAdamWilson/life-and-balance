@@ -166,7 +166,7 @@ const Intro = () => {
                     value="Subscribe"
                     name="subscribe"
                     id="mc-embedded-subscribe"
-                    className="button"
+                    className="button subscribe-button"
                   />
                   <p className="brandingLogo">
                     <a

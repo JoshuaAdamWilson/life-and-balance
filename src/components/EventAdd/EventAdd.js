@@ -22,18 +22,23 @@ const EventAdd = () => {
     };
     if (file) {
       const data = new FormData();
-      const filename = Date.now() + file.name;
-      data.append("name", filename);
+      // const filename = Date.now() + file.name;
+      // data.append("name", filename);
       data.append("file", file);
-      newEvent.photo = filename;
-      try {
-        await axios.post(
-          "https://life-and-balance.herokuapp.com/api/upload",
-          data,
-        );
-      } catch (error) {
-        console.log(error);
-      }
+      data.append("upload_preset", "h3y9mtdn");
+      data.append("cloud_name", "dzxwttjqx");
+      await fetch("https://api.cloudinary.com/v1_1/dzxwttjqx/image/upload", {
+        method: "post",
+        body: data,
+      })
+        .then((resp) => resp.json())
+        .then((data) => {
+          newEvent.photo = data.url;
+        })
+        .catch((error) => console.log(error));
+    } else {
+      setError("Photo Required");
+      return;
     }
     try {
       const res = await axios.post(

@@ -135,7 +135,7 @@ const Events = () => {
                                             <i className="event-icon far fa-trash-alt" id={event._id} onClick={handleDelete}></i>
                                         </div>
                                     )}
-                                    <img className="event-post-picture" src={PF + event.photo} alt="event" />
+                                    <img className="event-post-picture" src={event.photo} alt="event" />
                                     <h2 className="event-post-title">{event.title}</h2>
                                     <p className="host">Hosted by:<br />
                                         <strong className="indent">

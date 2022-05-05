@@ -68,7 +68,7 @@ const Intro = () => {
                     <Link to={`/blog/${post._id}`} className="faded">
                       <img
                         className="post-picture"
-                        src={PF + post.photo}
+                        src={post.photo}
                         alt="post"
                       />
                       <div className="content-inside">

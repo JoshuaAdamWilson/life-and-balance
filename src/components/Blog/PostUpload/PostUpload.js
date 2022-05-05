@@ -27,29 +27,31 @@ const PostUpload = () => {
     };
     if (file) {
       const data = new FormData();
-      const filename = Date.now() + file.name;
-      data.append("name", filename);
+      // const filename = Date.now() + file.name;
+      // data.append("name", filename);
       data.append("file", file);
-      newPost.photo = filename;
-      try {
-        await axios.post(
-          "https://life-and-balance.herokuapp.com/api/upload",
-          data,
-        );
-      } catch (error) {
-        console.log(error);
-      }
+      data.append("upload_preset", "h3y9mtdn");
+      data.append("cloud_name", "dzxwttjqx");
+      await fetch("https://api.cloudinary.com/v1_1/dzxwttjqx/image/upload", {
+        method: "post",
+        body: data,
+      })
+        .then((resp) => resp.json())
+        .then((data) => {
+          newPost.photo = data.url;
+          console.log(newPost);
+        })
+        .catch((error) => console.log(error));
     } else {
       setError("Photo Required");
       return;
     }
     try {
-      console.log(newPost);
       const res = await axios.post(
         "https://life-and-balance.herokuapp.com/api/posts",
         newPost,
       );
-
+      console.log(newPost);
       window.location.replace("/blog/" + res.data._id);
     } catch (error) {
       console.log(error);
@@ -84,12 +86,6 @@ const PostUpload = () => {
     setDesc(RichUtils.toggleInlineStyle(desc, "ITALIC"));
     return;
   };
-
-  // const onBlockClick = (e) => {
-  //   e.preventDefault();
-  //   setDesc(RichUtils.toggleInlineStyle(desc, 'QUOTE'));
-  //   return
-  // }
 
   return (
     <div>

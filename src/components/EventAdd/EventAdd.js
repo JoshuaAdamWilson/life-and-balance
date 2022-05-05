@@ -57,11 +57,6 @@ const EventAdd = () => {
           <h1>Add Event</h1>
           <label>Add an Image: </label>
           <div className="uploadContainer">
-            <input
-              type="file"
-              id="file-input"
-              onChange={(e) => setFile(e.target.files[0])}
-            />
             {file && (
               <img
                 className="uploadImage"
@@ -69,7 +64,14 @@ const EventAdd = () => {
                 alt=""
               />
             )}
+            <input
+              type="file"
+              id="file-input"
+              onChange={(e) => setFile(e.target.files[0])}
+            />
+            
           </div>
+          <br />
           <input
             type="text"
             placeholder="Title"
@@ -77,10 +79,6 @@ const EventAdd = () => {
             autoFocus={true}
             onChange={(e) => setTitle(e.target.value)}
           />
-          <input
-            type="datetime-local"
-            onChange={(e) => setDatetime(e.target.value)}
-          ></input>
           <input
             type="text"
             placeholder="Location"
@@ -92,6 +90,11 @@ const EventAdd = () => {
             placeholder="Price"
             className="write-input-title"
             onChange={(e) => setPrice(e.target.value)}
+          />
+          <input
+            type="datetime-local"
+            className="write-input-title"
+            onChange={(e) => setDatetime(e.target.value)}
           />
           <button className="write-submit" type="submit">
             Publish Event

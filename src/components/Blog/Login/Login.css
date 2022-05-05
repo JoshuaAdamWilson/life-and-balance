@@ -10,11 +10,11 @@
     align-items: center;
 }
 
-input {
+.login-form input {
     width: 250px;
 }
 
-.login-form > button {
+.login-form>button {
     margin: 20px auto auto auto;
 }
 

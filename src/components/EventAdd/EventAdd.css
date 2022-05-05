@@ -1,12 +1,26 @@
+.uploadContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.uploadContainer input {
+  text-align: center;
+  width: 200px !important;
+}
+
 .event-input-form {
-  height: 600px;
+  height: 700px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   width: 40%;
   margin: auto;
 }
 
 .event-input-form input {
   margin-bottom: 20px;
+  width: 300px;
 }

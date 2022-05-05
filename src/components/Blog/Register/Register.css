@@ -10,11 +10,11 @@
   align-items: center;
 }
 
-input {
+.register-form input {
   width: 242px;
 }
 
-.register-form > button {
+.register-form>button {
   margin: 20px auto auto auto;
 }
 

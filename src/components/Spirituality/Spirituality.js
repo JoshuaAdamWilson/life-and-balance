@@ -75,6 +75,7 @@ const Spirituality = () => {
           Spirituality is not adopting more beliefs and assumptions<br />but
           uncovering the best in you. -Amit Ray
         </h4>
+        <h3 className="for-more-information">For more Information, check out our Blog Section.</h3>
       </div>
     </div>
   )

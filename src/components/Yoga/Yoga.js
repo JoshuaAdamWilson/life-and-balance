@@ -79,6 +79,7 @@ const Yoga = () => {
             mindfulness at no cost to inspire people of all ages, shapes and
             sizes across the globe.
           </p>
+          <h3>For more Information, check out our Blog Section.</h3>
         </div>
       </div>
     </div>

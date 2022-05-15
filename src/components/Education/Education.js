@@ -164,6 +164,7 @@ const Education = () => {
             return <li key={illness.index}><a href={illness.website} target="_blank" rel="noreferrer">{illness.name}</a></li>
           })}
         </ul>
+        <h3 className="for-more-information">For more Information, check out our Blog Section.</h3>
       </div>
     </div>
   )

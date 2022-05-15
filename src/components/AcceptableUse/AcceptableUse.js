@@ -170,6 +170,7 @@ const AcceptableUse = () => {
         Website and Services.
       </p>
       <div className="acceptable-contact">
+        <h2>Contacting us</h2>
         <p>
           If you have any questions, concerns, or complaints regarding this
           Policy, we encourage you to contact us using the details below:
@@ -179,7 +180,6 @@ const AcceptableUse = () => {
         </p>
         <p>This document was last updated on April 15, 2022</p>
       </div>
-      <h2>Contacting us</h2>
     </div>
   );
 };

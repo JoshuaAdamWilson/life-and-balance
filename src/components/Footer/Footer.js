@@ -32,7 +32,7 @@ const Footer = () => {
           className="footer-picture"
         />
         <div className="footer-second">
-          <Link to="/acceptable-use">Acceptable Use Pilcy</Link>
+          <Link to="/acceptable-use">Acceptable Use Policy</Link>
           <Link to="/privacy-policy">Privacy Policy</Link>
           <Link to="/terms">Terms & Conditions</Link>
           <Link to="/disclaimer">Disclaimer</Link>

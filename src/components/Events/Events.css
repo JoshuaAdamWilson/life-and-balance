@@ -3,6 +3,11 @@
     margin: auto;
 }
 
+.events-intro {
+    margin: auto;
+    text-align: center;
+}
+
 .events-search {
     display: flex;
     margin: 20px 20px 20px 40px;

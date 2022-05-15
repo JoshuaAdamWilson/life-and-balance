@@ -113,6 +113,10 @@ const Events = () => {
         <div id="events" className='events'>
             <img src={EventsPicture} alt="events" className="events-picture" />
             <div className="events-section">
+                <div className="events-intro">
+                    <h2>Stop by here for News and Information</h2>
+                    <p>Learn about what we have happening or get suggestions for events, workshops or retreats to enhance your life/journey.</p>
+                </div>
                 <div className="events-search">
                     <i className="fas fa-search"></i>
                     <input 
@@ -172,7 +176,7 @@ const Events = () => {
                                 </li>
                             })
                         ) : (
-                            <h2>No Results Found!</h2>
+                            <h2>No Current Events</h2>
                         )
                     }
                 </ul>
